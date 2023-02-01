@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "197442414924",
+    "project_id": "tabunganku-b316d",
+    "storage_bucket": "tabunganku-b316d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197442414924:android:26c3486a0151e415fc47e9",
+        "android_client_info": {
+          "package_name": "com.example.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197442414924-8k29crvfanvc60p9p3p0f2npj0krth22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcNaguaz4SKO752Y_C2-vLDGGvH1HqMEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197442414924-8k29crvfanvc60p9p3p0f2npj0krth22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197442414924:android:4ac6d51b9e9ec5f0fc47e9",
+        "android_client_info": {
+          "package_name": "com.example.tabunganku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197442414924-8k29crvfanvc60p9p3p0f2npj0krth22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcNaguaz4SKO752Y_C2-vLDGGvH1HqMEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197442414924-8k29crvfanvc60p9p3p0f2npj0krth22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
