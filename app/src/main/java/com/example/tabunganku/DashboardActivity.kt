@@ -8,7 +8,6 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        //ini coba comiit push
-        //ini maul
+
     }
 }
