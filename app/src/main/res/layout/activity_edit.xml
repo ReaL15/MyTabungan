@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".EditActivity">
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/back_button"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -18,10 +18,9 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:padding="30dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="10dp"
         android:src="@drawable/ic_image_view"
-        android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
