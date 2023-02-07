@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TabunganKu</string>
+    <string name="tabunganku">Tabunganku</string>
+    <string name="headerstabunganku">Tabunganku</string>
+    <string name="icon_berlangung">Berlangsung</string>
+    <string name="icon_tercapai">Tercapai</string>
+    <string name="menu">Menu</string>
+    <string name="tabungan">Tabungan</string>
+    <string name="icon_tambahkan">Tambahkan</string>
 </resources>
