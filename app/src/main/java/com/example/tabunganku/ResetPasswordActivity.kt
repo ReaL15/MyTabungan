@@ -1,4 +1,4 @@
-package com.rsz.latihanfirebase
+package com.example.latihanfirebase
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,7 +8,6 @@ import android.widget.Toast
 import com.example.tabunganku.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.example.tabunganku.databinding.ActivityResetPasswordBinding
-import java.util.regex.Pattern
 
 class ResetPasswordActivity : AppCompatActivity() {
 
