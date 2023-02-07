@@ -51,8 +51,8 @@ class RegisterActivity : AppCompatActivity() {
             }
 
             //Validasi panjang password
-            if (password.length < 6) {
-                binding.edtPasswordRegister.error = "Password Minimal 6 Karakter"
+            if (password.length < 8) {
+                binding.edtPasswordRegister.error = "Password Minimal 8 Karakter"
                 binding.edtPasswordRegister.requestFocus()
                 return@setOnClickListener
             }

@@ -1,18 +1,19 @@
 package com.example.tabunganku
-
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
+import com.example.latihanfirebase.ResetPasswordActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.example.tabunganku.databinding.ActivityLoginBinding
-import com.rsz.latihanfirebase.ResetPasswordActivity
 
 class LoginActivity : AppCompatActivity() {
 
     lateinit var binding : ActivityLoginBinding
     lateinit var auth : FirebaseAuth
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -44,8 +45,8 @@ class LoginActivity : AppCompatActivity() {
 
             //Validasi email tidak sesuai
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                binding.edtPasswordLogin.error = "Email Tidak Valid"
-                binding.edtPasswordLogin.requestFocus()
+                binding.edtEmailLogin.error = "Email Tidak Valid"
+                binding.edtEmailLogin.requestFocus()
                 return@setOnClickListener
             }
 
@@ -72,4 +73,5 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
     }
+
 }

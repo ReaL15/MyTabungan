@@ -1,5 +1,6 @@
 package com.example.tabunganku
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -19,6 +20,7 @@ class SplashActivity : AppCompatActivity () {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
-        },3000)
+        },2000)
     }
+
 }
