@@ -7,4 +7,6 @@
     <string name="menu">Menu</string>
     <string name="tabungan">Tabungan</string>
     <string name="icon_tambahkan">Tambahkan</string>
+    <string name="nama_tabungan">Nama Tabungan</string>
+    <string name="target_tabungan">Target Tabungan</string>
 </resources>
