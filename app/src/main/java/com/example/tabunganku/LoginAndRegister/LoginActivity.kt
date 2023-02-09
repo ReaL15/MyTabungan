@@ -1,11 +1,10 @@
-package com.example.tabunganku
-import android.content.Context
+package com.example.tabunganku.LoginAndRegister
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
-import com.example.latihanfirebase.ResetPasswordActivity
+import com.example.tabunganku.aplikasi.DashboardActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.example.tabunganku.databinding.ActivityLoginBinding
 

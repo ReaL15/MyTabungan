@@ -1,11 +1,14 @@
-package com.example.tabunganku
+package com.example.tabunganku.aplikasi
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.tabunganku.R
 
-class BerlangsungActivity : AppCompatActivity() {
+class DashboardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_berlangsung)
+        setContentView(R.layout.activity_dashboard)
+
+
     }
 }
