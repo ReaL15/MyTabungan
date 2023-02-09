@@ -6,23 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".EditActivity">
 
-    <androidx.appcompat.widget.Toolbar
+    <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/back_button"
-        android:layout_width="30dp"
+        android:layout_width="20dp"
         android:layout_height="30dp"
-        android:src="@drawable/ic_back_button"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_back_button"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="match_parent"
+    <androidx.cardview.widget.CardView
+        android:layout_width="365dp"
         android:layout_height="200dp"
-        android:layout_marginEnd="10dp"
-        android:src="@drawable/ic_image_view"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="23dp"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/mainColor"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="23dp"
+        android:drawableStart="@drawable/ic_baseline_dehaze_24"
+        android:hint="@string/nama_tabungan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginStart="23dp"
+        android:drawableStart="@drawable/ic_baseline_tabungan_24"
+        android:hint="@string/target_tabungan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
