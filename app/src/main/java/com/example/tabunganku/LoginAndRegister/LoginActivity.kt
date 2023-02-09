@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
-import com.example.tabunganku.DashboardActivity
+import com.example.tabunganku.aplikasi.DashboardActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.example.tabunganku.databinding.ActivityLoginBinding
 
