@@ -1,4 +1,4 @@
-package com.example.tabunganku
+package com.example.tabunganku.LoginAndRegister
 
 import android.content.Intent
 import android.os.Bundle

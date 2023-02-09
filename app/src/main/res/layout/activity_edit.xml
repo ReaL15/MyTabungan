@@ -12,7 +12,7 @@
         android:layout_height="30dp"
         android:background="@drawable/ic_back_button"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,11 +23,32 @@
         android:layout_marginStart="23dp"
         android:background="@color/white"
         app:cardBackgroundColor="@color/mainColor"
-        app:cardCornerRadius="18dp"
+        app:cardCornerRadius="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="23dp"
+        android:drawableStart="@drawable/ic_baseline_dehaze_24"
+        android:hint="@string/nama_tabungan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:layout_marginStart="23dp"
+        android:drawableStart="@drawable/ic_baseline_tabungan_24"
+        android:hint="@string/target_tabungan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 
 

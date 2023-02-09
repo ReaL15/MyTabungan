@@ -1,11 +1,11 @@
 package com.example.tabunganku
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tabunganku.LoginAndRegister.LoginActivity
 
 class SplashActivity : AppCompatActivity () {
 
