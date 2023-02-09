@@ -30,22 +30,36 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nama_tabungan"
         android:layout_width="365dp"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:layout_marginTop="300dp"
         android:layout_marginStart="23dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:background="@drawable/custom_input"
         android:drawableStart="@drawable/ic_baseline_dehaze_24"
+        android:drawablePadding="12dp"
         android:hint="@string/nama_tabungan"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/target_tabungan"
         android:layout_width="365dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="360dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="375dp"
         android:layout_marginStart="23dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="12dp"
         android:drawableStart="@drawable/ic_baseline_tabungan_24"
         android:hint="@string/target_tabungan"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
