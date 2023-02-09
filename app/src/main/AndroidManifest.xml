@@ -27,7 +27,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ResetPasswordActivity"
+            android:name=".LoginAndRegister.ResetPasswordActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -44,7 +44,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterActivity"
+            android:name=".LoginAndRegister.RegisterActivity"
             android:exported="false" />
 
         <meta-data
@@ -52,7 +52,7 @@
             android:value="" />
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".LoginAndRegister.LoginActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
