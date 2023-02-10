@@ -16,7 +16,8 @@
         app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -27,7 +28,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="487dp"
                 android:orientation="vertical"
                 android:padding="30dp">
 
@@ -35,47 +36,47 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:backgroundTint="@color/black"
                     android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/sauce_black"
                     android:text="REGISTER"
                     android:textAlignment="center"
                     android:textColor="@color/mainColor"
                     android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/sauce_black"/>
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/edt_email_register"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email"
                     android:drawableStart="@drawable/costum_email_icon"
                     android:drawablePadding="10dp"
                     android:fontFamily="@font/sauce_medium"
-                    android:textSize="15sp"
-                    android:inputType="textEmailAddress" />
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp" />
 
                 <EditText
                     android:id="@+id/edt_password_register"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:drawableStart="@drawable/costum_lock_icon"
                     android:drawablePadding="10dp"
-                    android:layout_marginTop="5dp"
-                    android:hint="Password"
                     android:fontFamily="@font/sauce_medium"
-                    android:textSize="15sp"
-                    android:inputType="textPassword" />
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="15sp" />
 
                 <Button
                     android:id="@+id/btn_register"
                     android:layout_width="150dp"
-                    android:layout_gravity="center"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:backgroundTint="@color/mainColor"
-                    android:text="Register"
-                    android:fontFamily="@font/sauce_semibold"/>
+                    android:fontFamily="@font/sauce_semibold"
+                    android:text="Register" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -90,11 +91,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
+                    android:fontFamily="@font/sauce_black"
                     android:text="Login"
                     android:textAlignment="center"
                     android:textColor="@color/mainColor"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/sauce_black"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
