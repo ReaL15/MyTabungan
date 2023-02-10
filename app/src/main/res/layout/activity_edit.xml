@@ -63,6 +63,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/nominal_pengisian"
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="555dp"
+        android:layout_marginStart="15dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:ems="10"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/ic_baseline_tabungan_24"
+        android:hint="@string/nominal_pengisian"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:layout_width="150dp"
         android:layout_height="wrap_content"
@@ -70,18 +87,43 @@
         android:text="Rencana Pengisian"
         android:textColor="@color/black"
         android:textSize="15dp"
-        android:layout_marginTop="510dp"
+        android:layout_marginTop="518dp"
         android:layout_marginStart="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="440dp"
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="450dp"
         android:layout_marginStart="15dp"
+        android:background="@drawable/custom_input"
+        android:text="Harian"
+        android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />0
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="140dp"
+        android:background="@drawable/custom_input"
+        android:text="mingguan"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="113dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="266dp"
+        android:background="@drawable/custom_input"
+        android:text="tahunan"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 

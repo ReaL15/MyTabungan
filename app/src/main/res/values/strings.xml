@@ -9,4 +9,5 @@
     <string name="icon_tambahkan">Tambahkan</string>
     <string name="nama_tabungan">Nama Tabungan</string>
     <string name="target_tabungan">Target Tabungan</string>
+    <string name="nominal_pengisian">Nominal Pengisian</string>
 </resources>
