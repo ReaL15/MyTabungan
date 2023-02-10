@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="mainColor">#5BD3C7</color>
     <color name="dark_grey">#9e9e9e</color>
+    <color name="cardColor">#EFF5F9</color>
 
 
 </resources>
