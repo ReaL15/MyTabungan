@@ -148,7 +148,7 @@
             android:layout_marginTop="4dp"
             app:layout_constraintLeft_toLeftOf="@id/title_tabungan"
             app:layout_constraintTop_toBottomOf="@id/title_tabungan"
-            tools:listitem="@layout/activity_card_berlangsung" />
+            tools:listitem="@layout/activity_card_berlangsung"/>
 
 
 
