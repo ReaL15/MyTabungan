@@ -80,29 +80,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <!-- icon menu berlangsung -->
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/icon_menu_berlangsung"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginTop="12dp"
-                    android:src="@drawable/icon_berlangsung"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:id="@+id/tv_ket_berlangsung"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/icon_berlangung"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/sauce_semibold"
-                    app:layout_constraintEnd_toEndOf="@id/icon_menu_berlangsung"
-                    app:layout_constraintStart_toStartOf="@id/icon_menu_berlangsung"
-                    app:layout_constraintTop_toBottomOf="@id/icon_menu_berlangsung" />
 
                 <!-- icon menu tercapai -->
 
@@ -110,10 +87,9 @@
                     android:id="@+id/icon_menu_tercapai"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_marginStart="20dp"
                     android:layout_marginTop="12dp"
                     android:src="@drawable/icon_tercapai"
-                    app:layout_constraintStart_toEndOf="@id/icon_menu_berlangsung"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatTextView
