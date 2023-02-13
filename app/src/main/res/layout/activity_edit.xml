@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/frame_image"
         android:layout_width="365dp"
         android:layout_height="200dp"
         android:layout_marginTop="80dp"
@@ -77,6 +78,19 @@
         android:drawableStart="@drawable/ic_baseline_tabungan_24"
         android:hint="@string/nominal_pengisian"
         android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/button_simpan"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sauce_bold"
+        android:text="Simpan"
+        android:textColor="@color/teal_200"
+        android:textSize="17dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="316dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
