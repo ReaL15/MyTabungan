@@ -17,16 +17,26 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/frame_image"
-        android:layout_width="365dp"
+        android:id="@+id/card_image"
+        android:layout_width="355dp"
         android:layout_height="200dp"
         android:layout_marginTop="80dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="100dp"
         android:background="@color/white"
-        app:cardBackgroundColor="@color/mainColor"
+        app:cardBackgroundColor="@color/grey"
         app:cardCornerRadius="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_image"
+            android:scaleType="centerCrop"
+            />.
+
 
     </androidx.cardview.widget.CardView>
 
@@ -107,17 +117,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/card_harian"
         android:layout_width="113dp"
         android:layout_height="40dp"
         android:layout_marginTop="460dp"
         android:layout_marginStart="15dp"
         android:background="@drawable/custom_input"
+        android:drawableStart=""
         android:text="Harian"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/card_mingguan"
         android:layout_width="113dp"
         android:layout_height="40dp"
         android:layout_marginTop="460dp"
@@ -129,6 +142,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/card_tahunan"
         android:layout_width="113dp"
         android:layout_height="40dp"
         android:layout_marginTop="460dp"
