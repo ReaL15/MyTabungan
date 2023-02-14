@@ -8,11 +8,13 @@ import androidx.cardview.widget.CardView
 import com.example.tabunganku.aplikasi.DashboardActivity
 import com.example.tabunganku.databinding.ActivityEditBinding
 import com.example.tabunganku.databinding.ActivityLoginBinding
+import com.google.firebase.database.DatabaseReference
 
 class EditActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityEditBinding
+    lateinit var binding : ActivityEditBinding
     private lateinit var image : ImageView
+    private lateinit var database : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityEditBinding.inflate(layoutInflater)
@@ -30,6 +32,13 @@ class EditActivity : AppCompatActivity() {
         cardImage.setOnClickListener {
             image = findViewById(R.id.image)
             uploadImage(image)
+        }
+
+        binding.buttonSimpan.setOnClickListener {
+
+            val namaTabungan = binding.namaTabungan.text.toString()
+            val targetTabungan = binding.targetTabungan
+            val nominalPengisian = binding.nominalPengisian
         }
 
     }
