@@ -24,7 +24,7 @@
     <View
         android:id="@+id/view_atas"
         android:layout_width="80dp"
-        android:layout_height="3dp"
+        android:layout_height="2dp"
         android:background="@color/black"
         app:layout_constraintTop_toBottomOf="@id/text_nama_barang"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,8 +63,7 @@
         app:layout_constraintTop_toBottomOf="@id/text_target"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginTop="23dp" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title_estimasi"
@@ -75,6 +74,7 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view_bawah"/>
 
@@ -86,6 +86,7 @@
         android:fontFamily="@font/sauce_regular"
         android:textColor="@color/black"
         android:textSize="14sp"
+        android:layout_marginTop="3dp"
         app:layout_constraintStart_toEndOf="@id/title_estimasi"
         app:layout_constraintTop_toBottomOf="@id/view_bawah"/>
 
