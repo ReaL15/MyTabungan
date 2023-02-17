@@ -7,11 +7,14 @@ import android.widget.Toast
 import com.example.tabunganku.aplikasi.DashboardActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.example.tabunganku.databinding.ActivityLoginBinding
+import com.example.tabunganku.helper.Constant
+import com.example.tabunganku.helper.PreferenceHelper
 
 class LoginActivity : AppCompatActivity() {
 
     lateinit var binding : ActivityLoginBinding
     lateinit var auth : FirebaseAuth
+    lateinit var sph : PreferenceHelper
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,7 +60,34 @@ class LoginActivity : AppCompatActivity() {
             }
 
             LoginFirebase(email,password)
+
         }
+
+        sph = PreferenceHelper(this)
+
+        binding.btnLogin.setOnClickListener {
+            if (binding.edtEmailLogin.text.isNotEmpty() && binding.edtEmailLogin.text.isNotEmpty()) {
+                sph.put(Constant.PREF_EMAIL, binding.edtEmailLogin.text.toString())
+                sph.put(Constant.PREF_PASSWORD, binding.edtPasswordLogin.text.toString())
+                sph.put(Constant.PREF_IS_LOGIN, true)
+
+                Toast.makeText(applicationContext, "Berhasil Masuk", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if (sph.getBoolean(Constant.PREF_IS_LOGIN)) {
+            moveIntent()
+        }
+
+    }
+
+    private fun moveIntent() {
+        startActivity(Intent(this, DashboardActivity::class.java))
+        finish()
     }
 
     private fun LoginFirebase(email: String, password: String) {

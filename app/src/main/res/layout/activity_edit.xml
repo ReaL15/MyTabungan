@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/add_image"
             android:scaleType="centerCrop"
-            />.
+            />
 
 
     </androidx.cardview.widget.CardView>
@@ -123,7 +123,6 @@
         android:layout_marginTop="460dp"
         android:layout_marginStart="15dp"
         android:background="@drawable/custom_input"
-        android:drawableStart=""
         android:text="Harian"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"
