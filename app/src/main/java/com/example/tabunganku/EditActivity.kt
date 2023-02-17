@@ -90,7 +90,7 @@ class EditActivity : AppCompatActivity(), View.OnClickListener {
             return
         }
 
-        val ref = FirebaseDatabase.getInstance().getReference("items")
+        val ref = FirebaseDatabase.getInstance("https://tabunganku-6e8ff-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("items")
 
         val itmId = ref.push().key
 
