@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/add_image"
             android:scaleType="centerCrop"
-            />.
+            />
 
 
     </androidx.cardview.widget.CardView>
@@ -92,19 +92,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/button_simpan"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/sauce_bold"
-        android:text="Simpan"
-        android:textColor="@color/teal_200"
-        android:textSize="17dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginStart="310dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/sauce_bold"
@@ -123,7 +110,6 @@
         android:layout_marginTop="460dp"
         android:layout_marginStart="15dp"
         android:background="@drawable/custom_input"
-        android:drawableStart=""
         android:text="Harian"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -152,6 +138,20 @@
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Simpan"
+        android:layout_width="365dp"
+        android:layout_height="60dp"
+        android:text="Simpan"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="640dp"
+        android:backgroundTint="@color/mainColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 
 
