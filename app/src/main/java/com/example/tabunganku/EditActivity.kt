@@ -20,7 +20,6 @@ import java.lang.System.err
 class EditActivity : AppCompatActivity(), View.OnClickListener {
 
     lateinit var binding : ActivityEditBinding
-    private lateinit var image : ImageView
     private lateinit var namaTabungan : EditText
     private lateinit var targetTabungan : EditText
     private lateinit var nominalPengisian : EditText
@@ -43,31 +42,8 @@ class EditActivity : AppCompatActivity(), View.OnClickListener {
             val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
         }
-
-        val cardImage : CardView = findViewById(R.id.card_image)
-
-
-        cardImage.setOnClickListener {
-            image = findViewById(R.id.image)
-            uploadImage(image)
-        }
-
-
     }
 
-    private fun uploadImage(image: ImageView?) {
-        val intent = Intent()
-        intent.action = Intent.ACTION_GET_CONTENT
-        intent.type = "image/*"
-        startActivityForResult(intent,1)
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == 1){
-             image.setImageURI(data?.data)
-        }
-    }
 
     override fun onClick(v: View?) {
         saveData()
