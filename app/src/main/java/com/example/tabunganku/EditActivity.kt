@@ -3,6 +3,7 @@ package com.example.tabunganku
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -14,6 +15,7 @@ import com.example.tabunganku.databinding.ActivityEditBinding
 import com.example.tabunganku.databinding.ActivityLoginBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import java.lang.System.err
 
 class EditActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -90,15 +92,25 @@ class EditActivity : AppCompatActivity(), View.OnClickListener {
             return
         }
 
-        val ref = FirebaseDatabase.getInstance("https://tabunganku-6e8ff-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("items")
+        val ref = FirebaseDatabase.getInstance("https://tabunganku-b316d-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("items")
 
         val itmId = ref.push().key
 
         val itm = Items(itmId,namaBarang,hargaBarang,uangNominal)
 
         if (itmId != null) {
+            Log.d("Test", itmId)
             ref.child(itmId).setValue(itm).addOnCompleteListener{
-                Toast.makeText(applicationContext,"Data erhasil di tambahkan", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Data berhasil di tambahkan", Toast.LENGTH_SHORT).show()
+
+                namaTabungan.text.clear()
+                targetTabungan.text.clear()
+                nominalPengisian.text.clear()
+
+            }.addOnFailureListener {
+                err ->
+                Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_SHORT).show()
+                Log.e("ERROR MESSAGE", "saveData: ${err.message}", )
             }
         }
 
