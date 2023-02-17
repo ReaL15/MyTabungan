@@ -96,6 +96,7 @@
         android:layout_height="160dp"
         android:layout_marginTop="30dp"
         app:cardCornerRadius="12dp"
+        android:background="@drawable/add_image"
         app:layout_constraintStart_toEndOf="@id/text_nama_barang"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -103,13 +104,14 @@
             android:id="@+id/gambar_barang"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@color/greenlight"/>
+            android:src="@drawable/add_image" />
 
 
     </androidx.cardview.widget.CardView>
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/tombol_terkumpul"
         android:layout_width="200dp"
         android:layout_height="72dp"
         android:backgroundTint="@android:color/transparent"
@@ -148,6 +150,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/tombol_kurang"
         android:layout_width="200dp"
         android:layout_height="72dp"
         android:backgroundTint="@android:color/transparent"

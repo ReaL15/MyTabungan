@@ -95,7 +95,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_maul"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Mauludy"
         android:fontFamily="@font/sauce_semibold"
@@ -109,7 +109,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_dhafa"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Dhafa"
         android:fontFamily="@font/sauce_semibold"
@@ -123,7 +123,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_andara"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Andara"
         android:fontFamily="@font/sauce_semibold"
@@ -137,7 +137,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_syafiq"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Syafiq"
         android:fontFamily="@font/sauce_semibold"
@@ -151,7 +151,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_job_maul"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Chairman"
         android:fontFamily="@font/sauce_semibold"
@@ -164,7 +164,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_job_dhafa"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Back End Developer"
         android:fontFamily="@font/sauce_semibold"
@@ -177,7 +177,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_job_andara"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Front End Developer"
         android:fontFamily="@font/sauce_semibold"
@@ -190,7 +190,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/text_job_syafiq"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="UI and UX Designer"
         android:fontFamily="@font/sauce_semibold"
@@ -202,7 +202,45 @@
         app:layout_constraintTop_toBottomOf="@id/text_syafiq"/>
 
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/avatar_mauludy"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@color/grey"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="145dp"
+        app:layout_constraintStart_toEndOf="@id/text_maul"
+        app:layout_constraintTop_toBottomOf="@id/line_credit"/>
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/avatar_dhafa"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@color/grey"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="145dp"
+        app:layout_constraintStart_toEndOf="@id/text_dhafa"
+        app:layout_constraintTop_toBottomOf="@id/avatar_mauludy"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/avatar_andara"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@color/grey"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="145dp"
+        app:layout_constraintStart_toEndOf="@id/text_andara"
+        app:layout_constraintTop_toBottomOf="@id/avatar_dhafa"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/avatar_syafiq"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@color/grey"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="145dp"
+        app:layout_constraintStart_toEndOf="@id/text_syafiq"
+        app:layout_constraintTop_toBottomOf="@id/avatar_andara"/>
 
 
 
