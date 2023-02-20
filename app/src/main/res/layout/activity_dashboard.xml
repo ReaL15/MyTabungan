@@ -13,12 +13,11 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/header"
-            android:layout_width="wrap_content"
-            android:layout_height="175dp"
-            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="-10dp"
             android:src="@drawable/background_dashboard"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     
