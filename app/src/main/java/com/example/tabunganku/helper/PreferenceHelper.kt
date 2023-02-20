@@ -6,8 +6,8 @@ import android.content.SharedPreferences
 class PreferenceHelper(context: Context) {
 
     private val PREFF_NAME = "MyTabungan"
-    protected lateinit var sharedPref: SharedPreferences
-    protected lateinit var editor: SharedPreferences.Editor
+    var sharedPref: SharedPreferences
+    var editor: SharedPreferences.Editor
 
     init {
         sharedPref = context.getSharedPreferences(PREFF_NAME, Context.MODE_PRIVATE)
