@@ -44,7 +44,7 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
                     android:backgroundTint="@color/black"
-                    android:fontFamily="@font/sauce_black"
+                    android:fontFamily="@font/montserrat_black"
                     android:text="LOGIN"
                     android:textAlignment="center"
                     android:textColor="@color/mainColor"
@@ -56,7 +56,7 @@
                     android:layout_width="290dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/sauce_medium"
+                    android:fontFamily="@font/montserrat_bold"
                     android:textSize="15sp"
                     android:drawableStart="@drawable/costum_email_icon"
                     android:drawablePadding="10dp"
@@ -72,7 +72,7 @@
                     android:layout_height="50dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/sauce_medium"
+                    android:fontFamily="@font/montserrat_bold"
                     android:textSize="15sp"
                     android:drawableStart="@drawable/costum_lock_icon"
                     android:drawablePadding="10dp"
@@ -89,7 +89,8 @@
                     android:layout_marginTop="10dp"
                     android:backgroundTint="@color/black"
                     android:text="Forgot Password?"
-                    android:textAlignment="textEnd" />
+                    android:textAlignment="textEnd"
+                    android:fontFamily="@font/montserrat_regular"/>
 
                 <Button
                     android:id="@+id/btn_login"
@@ -98,7 +99,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:backgroundTint="@color/mainColor"
-                    android:fontFamily="@font/sauce_bold"
+                    android:fontFamily="@font/montserrat_bold"
                     android:text="LOGIN"
                     android:textColor="@color/white" />
 
