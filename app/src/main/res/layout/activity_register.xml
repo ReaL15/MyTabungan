@@ -47,7 +47,7 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="10dp"
                     android:backgroundTint="@color/black"
-                    android:fontFamily="@font/sauce_black"
+                    android:fontFamily="@font/montserrat_black"
                     android:text="REGISTER"
                     android:textAlignment="center"
                     android:textColor="@color/mainColor"
@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/costum_email_icon"
                     android:drawablePadding="10dp"
-                    android:fontFamily="@font/sauce_medium"
+                    android:fontFamily="@font/montserrat_bold"
                     android:hint="Email"
                     android:inputType="textEmailAddress"
                     android:textSize="15sp" />
@@ -72,7 +72,7 @@
                     android:layout_marginTop="5dp"
                     android:drawableStart="@drawable/costum_lock_icon"
                     android:drawablePadding="10dp"
-                    android:fontFamily="@font/sauce_medium"
+                    android:fontFamily="@font/montserrat_bold"
                     android:hint="Password"
                     android:inputType="textPassword"
                     android:textSize="15sp" />
@@ -84,7 +84,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:backgroundTint="@color/mainColor"
-                    android:fontFamily="@font/sauce_semibold"
+                    android:fontFamily="@font/montserrat_bold"
                     android:text="Register" />
 
                 <TextView
@@ -93,14 +93,15 @@
                     android:layout_marginTop="30dp"
                     android:backgroundTint="@color/black"
                     android:text="Already Have Account?"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:fontFamily="@font/montserrat_regular"/>
 
                 <TextView
                     android:id="@+id/tv_to_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/black"
-                    android:fontFamily="@font/sauce_black"
+                    android:fontFamily="@font/montserrat_regular"
                     android:text="Login"
                     android:textAlignment="center"
                     android:textColor="@color/mainColor"

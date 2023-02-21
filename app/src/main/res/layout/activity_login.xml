@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:src="@drawable/ilstr_lgn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -94,14 +94,13 @@
                 <Button
                     android:id="@+id/btn_login"
                     android:layout_width="150dp"
-                    android:layout_height="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:backgroundTint="@color/mainColor"
-                    android:layout_gravity="center"
+                    android:fontFamily="@font/sauce_bold"
                     android:text="LOGIN"
-                    android:textSize="18dp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/sauce_black"/>
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 

@@ -24,6 +24,8 @@ class EditActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var targetTabungan : EditText
     private lateinit var nominalPengisian : EditText
     private lateinit var btnSimpan : Button
+    private var statusHarian : Boolean = false
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +44,18 @@ class EditActivity : AppCompatActivity(), View.OnClickListener {
             val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
         }
+
+        binding.cardHarian.setOnClickListener {
+            if (statusHarian == false){
+                binding.cardHarian.setBackgroundResource(R.drawable.button_bg_color)
+                statusHarian = true
+            }else{
+                binding.cardHarian.setBackgroundResource(R.drawable.button_background)
+                statusHarian = false
+            }
+
+        }
+
     }
 
 
