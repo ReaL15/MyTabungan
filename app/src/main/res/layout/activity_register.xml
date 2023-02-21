@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,8 +9,19 @@
     android:padding="30dp"
     tools:context=".LoginAndRegister.LoginActivity">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ilustrasi_register"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ilustrasi_register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
 
     <LinearLayout
+        android:id="@+id/layour_regist"
         android:layout_width="match_parent"
         android:layout_height="345dp"
         android:layout_centerInParent="true"
@@ -17,13 +29,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/ilustrasi_register">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:elevation="50dp"
             app:cardCornerRadius="20dp">
 
             <LinearLayout
