@@ -11,8 +11,8 @@
     <string name="target_tabungan">Target Tabungan</string>
     <string name="nominal_pengisian">Nominal Pengisian</string>
     <string name="text_motor">Motor</string>
-    <string name="text_harga">harga</string>
-    <string name="text_harian">Rp.50.000 Perminggu</string>
+    <string name="text_harga">Harga Barang</string>
+    <string name="text_harian">Rp. </string>
     <string name="text_estimasi">Estimasi :</string>
     <string name="text_hasil_estimasi">1 Bulan lagi</string>
     <string name="text_terkumpul">Terkumpul</string>
