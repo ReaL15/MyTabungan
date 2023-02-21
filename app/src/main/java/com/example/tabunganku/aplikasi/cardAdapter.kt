@@ -1,5 +1,6 @@
 package com.example.tabunganku.aplikasi
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
@@ -12,11 +13,18 @@ class cardAdapter(private val itemList : ArrayList<Items>) : RecyclerView.Adapte
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): myViewHolder {
-        TODO("Not yet implemented")
+
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.activity_card_berlangsung,
+        parent,false)
+        return myViewHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: myViewHolder, position: Int) {
-        TODO("Not yet implemented")
+
+        val currentItem = itemList[position]
+
+        holder.namaBarang.text = currentItem.namaBarang
+        holder.hargaBarang.text = currentItem.hargaBarang
     }
 
     override fun getItemCount(): Int {
