@@ -263,7 +263,7 @@
             android:layout_height="50dp"
             app:cardCornerRadius="30dp"
             android:layout_marginTop="30dp"
-            app:cardBackgroundColor="@color/grey"
+            app:cardBackgroundColor="@color/red"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_job_syafiq">
