@@ -23,8 +23,13 @@ class EditActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var namaTabungan : EditText
     private lateinit var targetTabungan : EditText
     private lateinit var nominalPengisian : EditText
+    private lateinit var cardHarian : Button
+    private lateinit var cardMingguan : Button
+    private lateinit var cardTahunan : Button
     private lateinit var btnSimpan : Button
     private var statusHarian : Boolean = false
+    private var statusMingguan : Boolean = false
+    private var statusTahunan : Boolean = false
 
 
 
@@ -46,14 +51,46 @@ class EditActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         binding.cardHarian.setOnClickListener {
-            if (statusHarian == false){
+            if (!statusHarian){
                 binding.cardHarian.setBackgroundResource(R.drawable.button_bg_color)
                 statusHarian = true
+                statusMingguan = false
+                statusTahunan = false
+                binding.cardMingguan.setBackgroundResource(R.drawable.button_background)
+                binding.cardTahunan.setBackgroundResource(R.drawable.button_background)
+
             }else{
                 binding.cardHarian.setBackgroundResource(R.drawable.button_background)
                 statusHarian = false
             }
+        }
 
+        binding.cardMingguan.setOnClickListener {
+            if (statusMingguan == false){
+                binding.cardMingguan.setBackgroundResource(R.drawable.button_bg_color)
+                statusMingguan = true
+                statusHarian = false
+                statusTahunan = false
+                binding.cardHarian.setBackgroundResource(R.drawable.button_background)
+                binding.cardTahunan.setBackgroundResource(R.drawable.button_background)
+            }else{
+                binding.cardMingguan.setBackgroundResource(R.drawable.button_background)
+                statusMingguan = false
+            }
+        }
+
+        binding.cardTahunan.setOnClickListener {
+            if (statusTahunan == false){
+                binding.cardTahunan.setBackgroundResource(R.drawable.button_bg_color)
+                statusTahunan = true
+                statusHarian = false
+                statusMingguan = false
+                binding.cardMingguan.setBackgroundResource(R.drawable.button_background)
+                binding.cardHarian.setBackgroundResource(R.drawable.button_background)
+            }else{
+                binding.cardTahunan.setBackgroundResource(R.drawable.button_background)
+                statusTahunan = false
+            }
         }
 
     }
@@ -96,6 +133,7 @@ class EditActivity : AppCompatActivity(), View.OnClickListener {
                 namaTabungan.text.clear()
                 targetTabungan.text.clear()
                 nominalPengisian.text.clear()
+
 
             }.addOnFailureListener {
                 err ->
