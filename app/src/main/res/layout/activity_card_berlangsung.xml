@@ -62,7 +62,7 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title_estimasi"
-        android:layout_width="68dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/inter_medium"
