@@ -20,7 +20,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-    
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:src="@drawable/gear_settings"
+            android:layout_marginEnd="335dp"
+            android:layout_marginBottom="83dp"
+            app:layout_constraintBottom_toBottomOf="@id/header"
+            app:layout_constraintEnd_toEndOf="@id/header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/header"/>
+
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/title_menu"
             android:layout_width="80dp"

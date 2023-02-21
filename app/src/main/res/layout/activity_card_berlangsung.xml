@@ -29,33 +29,46 @@
         android:text="@string/text_harga"
         android:fontFamily="@font/inter_medium"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@id/text_nama_barang"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"/>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/text_target"
+        android:id="@+id/text_rp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/text_harian"
         android:textColor="@color/black"
         android:fontFamily="@font/inter_medium"
-        android:textSize="16sp"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_harga"
         android:layout_marginStart="16dp"/>
 
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_target"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_medium"
+        android:text="50.000"
+        android:layout_marginStart="38dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/text_rp"
+        app:layout_constraintTop_toBottomOf="@id/text_harga" />
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/title_estimasi"
-        android:layout_width="65dp"
+        android:layout_width="68dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/inter_medium"
         android:text="@string/text_estimasi"
         android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textSize="15sp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_target" />
@@ -67,7 +80,7 @@
         android:fontFamily="@font/inter_medium"
         android:text="@string/text_hasil_estimasi"
         android:textColor="@color/black"
-        android:textSize="14sp"
+        android:textSize="15sp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toEndOf="@id/title_estimasi"
         app:layout_constraintTop_toBottomOf="@id/text_target" />
@@ -75,7 +88,7 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/tombol_terkumpul"
-        android:layout_width="200dp"
+        android:layout_width="180dp"
         android:layout_height="72dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,13 +127,13 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/tombol_kurang"
-        android:layout_width="200dp"
+        android:layout_width="180dp"
         android:layout_height="72dp"
         android:backgroundTint="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title_estimasi"
         android:layout_marginTop="28dp"
-        android:layout_marginStart="200dp">
+        android:layout_marginStart="180dp">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/title_kurang"
