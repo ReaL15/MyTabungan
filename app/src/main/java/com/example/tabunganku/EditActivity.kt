@@ -138,6 +138,7 @@ class EditActivity : AppCompatActivity(), View.OnClickListener {
                 binding.cardHarian.setBackgroundResource(R.drawable.button_background)
                 binding.cardMingguan.setBackgroundResource(R.drawable.button_background)
                 binding.cardTahunan.setBackgroundResource(R.drawable.button_background)
+                super.onBackPressed()
 
 
             }.addOnFailureListener { err ->
