@@ -28,8 +28,8 @@ class DashboardActivity : AppCompatActivity() {
            startActivity(intent)
        }
 
-        binding.iconMenuTambahkan.setOnClickListener{
-            val intent = Intent(this, EditActivity::class.java)
+        binding.btnSettings.setOnClickListener{
+            val intent = Intent(this, SettingActivity::class.java)
             startActivity(intent)
         }
 
