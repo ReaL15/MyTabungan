@@ -232,7 +232,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/pfp_dhafa"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="16dp"
             android:layout_marginStart="130dp"
             app:layout_constraintStart_toEndOf="@id/text_dhafa"
             app:layout_constraintTop_toBottomOf="@id/avatar_mauludy"/>
@@ -242,7 +242,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/pfp_andara"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="16dp"
             android:layout_marginStart="130dp"
             app:layout_constraintStart_toEndOf="@id/text_andara"
             app:layout_constraintTop_toBottomOf="@id/avatar_dhafa"/>
@@ -252,7 +252,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/pfp_syafiq"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="16dp"
             android:layout_marginStart="130dp"
             app:layout_constraintStart_toEndOf="@id/text_syafiq"
             app:layout_constraintTop_toBottomOf="@id/avatar_andara"/>

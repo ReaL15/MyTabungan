@@ -7,7 +7,7 @@
     tools:context=".aplikasi.DepositActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/header_setting"
+        android:id="@+id/header_deposit"
         android:layout_width="match_parent"
         android:layout_height="170dp"
         android:layout_marginTop="-10dp"
@@ -36,7 +36,7 @@
         android:textColor="@color/black"
         android:fontFamily="@font/inter_bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header_setting"/>
+        app:layout_constraintTop_toBottomOf="@id/header_deposit"/>
 
    <com.google.android.material.textfield.TextInputLayout
        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
