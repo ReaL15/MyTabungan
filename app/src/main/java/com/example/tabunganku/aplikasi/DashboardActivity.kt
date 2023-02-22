@@ -33,14 +33,21 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnSettings.setOnClickListener {
+             val intent = Intent(this, SettingActivity::class.java)
+             startActivity(intent)
+        }
+
+        binding.iconMenuTercapai.setOnClickListener {
+            startActivity(Intent(this, TercapaiActivity::class.java))
+        }
+
         itemRecyclerView = findViewById(R.id.recycler_view)
         itemRecyclerView.layoutManager = LinearLayoutManager(this)
         itemRecyclerView.setHasFixedSize(true)
 
         itemArrayList = arrayListOf<Items>()
         getUserData()
-
-
 
 
 
