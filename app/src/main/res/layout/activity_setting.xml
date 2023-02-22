@@ -96,9 +96,9 @@
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text_profile"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email"
+            android:text="Email :"
             android:fontFamily="@font/inter_semibold"
             android:textSize="18sp"
             android:textAlignment="textStart"
@@ -107,6 +107,20 @@
             android:layout_marginTop="20dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/line_account"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Email"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/text_profile"
+            app:layout_constraintTop_toBottomOf="@id/line_account" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text_maul"
@@ -264,7 +278,7 @@
             android:layout_height="50dp"
             app:cardCornerRadius="30dp"
             android:layout_marginTop="30dp"
-            app:cardBackgroundColor="@color/red"
+            app:cardBackgroundColor="@color/mainColor"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_job_syafiq">

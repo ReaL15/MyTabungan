@@ -74,6 +74,7 @@ class LoginActivity : AppCompatActivity() {
                 .addOnCompleteListener(this) {
                     if (it.isSuccessful) {
                         Toast.makeText(this, "Selamat datang $email", Toast.LENGTH_SHORT).show()
+                        sph.put(Constant.PREF_EMAIL, email)
                         sph.put(Constant.PREF_IS_LOGIN, true)
                         val intent = Intent(this, DashboardActivity::class.java)
                         startActivity(intent)
