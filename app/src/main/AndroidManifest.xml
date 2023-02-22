@@ -13,21 +13,37 @@
         android:theme="@style/Theme.TabunganKu"
         tools:targetApi="31">
         <activity
-            android:name=".DepositActivity"
+            android:name=".TercapaiActivity"
+            android:exported="false"
+            android:label="@string/title_activity_tercapai"
+            android:theme="@style/Theme.TabunganKu.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WithdrawActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ProfileActivity"
+            android:name=".aplikasi.DepositActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".SettingActivity"
+            android:name=".aplikasi.ProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".aplikasi.SettingActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
