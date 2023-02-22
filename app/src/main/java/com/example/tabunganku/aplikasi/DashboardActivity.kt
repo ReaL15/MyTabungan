@@ -28,6 +28,11 @@ class DashboardActivity : AppCompatActivity() {
            startActivity(intent)
        }
 
+        binding.iconMenuTambahkan.setOnClickListener{
+            val intent = Intent(this, EditActivity::class.java)
+            startActivity(intent)
+        }
+
         itemRecyclerView = findViewById(R.id.recycler_view)
         itemRecyclerView.layoutManager = LinearLayoutManager(this)
         itemRecyclerView.setHasFixedSize(true)
