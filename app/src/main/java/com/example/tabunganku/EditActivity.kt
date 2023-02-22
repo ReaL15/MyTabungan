@@ -19,18 +19,17 @@ import java.lang.System.err
 
 class EditActivity : AppCompatActivity(), View.OnClickListener {
 
-    lateinit var binding : ActivityEditBinding
-    private lateinit var namaTabungan : EditText
-    private lateinit var targetTabungan : EditText
-    private lateinit var nominalPengisian : EditText
-    private lateinit var cardHarian : Button
-    private lateinit var cardMingguan : Button
-    private lateinit var cardTahunan : Button
-    private lateinit var btnSimpan : Button
-    private var statusHarian : Boolean = false
-    private var statusMingguan : Boolean = false
-    private var statusTahunan : Boolean = false
-
+    lateinit var binding: ActivityEditBinding
+    private lateinit var namaTabungan: EditText
+    private lateinit var targetTabungan: EditText
+    private lateinit var nominalPengisian: EditText
+    private lateinit var cardHarian: Button
+    private lateinit var cardMingguan: Button
+    private lateinit var cardTahunan: Button
+    private lateinit var btnSimpan: Button
+    private var statusHarian: Boolean = false
+    private var statusMingguan: Boolean = false
+    private var statusTahunan: Boolean = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,13 +44,13 @@ class EditActivity : AppCompatActivity(), View.OnClickListener {
 
         btnSimpan.setOnClickListener(this)
 
-        binding.backButton.setOnClickListener{
+        binding.backButton.setOnClickListener {
             val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
         }
 
         binding.cardHarian.setOnClickListener {
-            if (!statusHarian){
+            if (!statusHarian) {
                 binding.cardHarian.setBackgroundResource(R.drawable.button_bg_color)
                 statusHarian = true
                 statusMingguan = false
@@ -59,35 +58,35 @@ class EditActivity : AppCompatActivity(), View.OnClickListener {
                 binding.cardMingguan.setBackgroundResource(R.drawable.button_background)
                 binding.cardTahunan.setBackgroundResource(R.drawable.button_background)
 
-            }else{
+            } else {
                 binding.cardHarian.setBackgroundResource(R.drawable.button_background)
                 statusHarian = false
             }
         }
 
         binding.cardMingguan.setOnClickListener {
-            if (statusMingguan == false){
+            if (statusMingguan == false) {
                 binding.cardMingguan.setBackgroundResource(R.drawable.button_bg_color)
                 statusMingguan = true
                 statusHarian = false
                 statusTahunan = false
                 binding.cardHarian.setBackgroundResource(R.drawable.button_background)
                 binding.cardTahunan.setBackgroundResource(R.drawable.button_background)
-            }else{
+            } else {
                 binding.cardMingguan.setBackgroundResource(R.drawable.button_background)
                 statusMingguan = false
             }
         }
 
         binding.cardTahunan.setOnClickListener {
-            if (statusTahunan == false){
+            if (statusTahunan == false) {
                 binding.cardTahunan.setBackgroundResource(R.drawable.button_bg_color)
                 statusTahunan = true
                 statusHarian = false
                 statusMingguan = false
                 binding.cardMingguan.setBackgroundResource(R.drawable.button_background)
                 binding.cardHarian.setBackgroundResource(R.drawable.button_background)
-            }else{
+            } else {
                 binding.cardTahunan.setBackgroundResource(R.drawable.button_background)
                 statusTahunan = false
             }
@@ -99,46 +98,51 @@ class EditActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         saveData()
     }
-    private fun saveData(){
+
+    private fun saveData() {
         val namaBarang = namaTabungan.text.toString().trim()
         val hargaBarang = targetTabungan.text.toString().trim()
         val uangNominal = nominalPengisian.text.toString().trim()
 
 
-        if (namaBarang.isEmpty()){
+        if (namaBarang.isEmpty()) {
             namaTabungan.error = "Isi Nama Barang!"
             return
         }
 
-        if (hargaBarang.isEmpty()){
+        if (hargaBarang.isEmpty()) {
             targetTabungan.error = "Isi Target Tabungan!"
             return
         }
-        if (uangNominal.isEmpty()){
+        if (uangNominal.isEmpty()) {
             nominalPengisian.error = "Isi Nominal Pengisian!"
             return
         }
 
-        val ref = FirebaseDatabase.getInstance("https://tabunganku-b316d-default-rtdb.asia-southeast1.firebasedatabase.app/").getReference("items")
+        val ref =
+            FirebaseDatabase.getInstance("https://tabunganku-b316d-default-rtdb.asia-southeast1.firebasedatabase.app/")
+                .getReference("items")
 
         val itmId = ref.push().key
 
-        val itm = Items(itmId,namaBarang,hargaBarang,uangNominal)
+        val itm = Items(itmId, namaBarang, hargaBarang, uangNominal,statusHarian,statusMingguan,statusTahunan)
 
         if (itmId != null) {
             Log.d("Test", itmId)
-            ref.child(itmId).setValue(itm).addOnCompleteListener{
-                Toast.makeText(this,"Data berhasil di tambahkan", Toast.LENGTH_SHORT).show()
+            ref.child(itmId).setValue(itm).addOnCompleteListener {
+                Toast.makeText(this, "Data berhasil di tambahkan", Toast.LENGTH_SHORT).show()
 
                 namaTabungan.text.clear()
                 targetTabungan.text.clear()
                 nominalPengisian.text.clear()
+                binding.cardHarian.setBackgroundResource(R.drawable.button_background)
+                binding.cardMingguan.setBackgroundResource(R.drawable.button_background)
+                binding.cardTahunan.setBackgroundResource(R.drawable.button_background)
 
 
-            }.addOnFailureListener {
-                err ->
+            }.addOnFailureListener { err ->
                 Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_SHORT).show()
-                Log.e("ERROR MESSAGE", "saveData: ${err.message}", )
+                Log.e("ERROR MESSAGE", "saveData: ${err.message}")
             }
         }
 
