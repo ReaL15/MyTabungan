@@ -13,7 +13,7 @@
         android:theme="@style/Theme.TabunganKu"
         tools:targetApi="31">
         <activity
-            android:name=".TercapaiActivity"
+            android:name=".aplikasi.TercapaiActivity"
             android:exported="false"
             android:label="@string/title_activity_tercapai"
             android:theme="@style/Theme.TabunganKu.NoActionBar">
@@ -22,7 +22,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".WithdrawActivity"
+            android:name=".aplikasi.WithdrawActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
