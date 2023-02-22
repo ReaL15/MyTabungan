@@ -38,14 +38,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header_setting"/>
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Deposit"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title_deposit"/>
+   <com.google.android.material.textfield.TextInputLayout
+       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+       android:id="@+id/layoutedittextdeposit"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="16dp"
+       android:hint="Deposit"
+       app:helperText="Required*"
+       app:helperTextTextColor="@color/red"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/title_deposit">
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/edittext_deposit"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="number"/>
+
+   </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
