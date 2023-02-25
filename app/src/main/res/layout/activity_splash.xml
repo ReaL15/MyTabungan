@@ -18,7 +18,7 @@
         android:id="@+id/txt_frm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Form"
+        android:text="From"
         android:textSize="15sp"
         android:fontFamily="@font/sauce_bold"
         android:textColor="@color/mainColor"

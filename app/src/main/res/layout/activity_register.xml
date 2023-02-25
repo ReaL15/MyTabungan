@@ -60,9 +60,11 @@
                     <EditText
                         android:id="@+id/edt_email_register"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
                         android:drawableStart="@drawable/costum_email_icon"
                         android:drawablePadding="10dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
                         android:fontFamily="@font/montserrat_bold"
                         android:hint="Email"
                         android:autofillHints="emailAddress"
@@ -81,9 +83,11 @@
                     <EditText
                         android:id="@+id/edt_password_register"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="50dp"
                         android:drawableStart="@drawable/costum_lock_icon"
                         android:drawablePadding="10dp"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
                         android:fontFamily="@font/montserrat_bold"
                         android:hint="Password"
                         android:autofillHints="password"
@@ -100,7 +104,8 @@
                     android:layout_marginTop="20dp"
                     android:backgroundTint="@color/mainColor"
                     android:fontFamily="@font/montserrat_bold"
-                    android:text="Register" />
+                    android:text="Register"
+                    android:textColor="@color/white"/>
 
                 <TextView
                     android:layout_width="match_parent"

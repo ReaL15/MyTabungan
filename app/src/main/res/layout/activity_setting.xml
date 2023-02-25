@@ -8,7 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -271,29 +271,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/avatar_andara"/>
 
-        <androidx.cardview.widget.CardView
+        <Button
             android:id="@+id/tombol_logout"
             android:layout_width="200dp"
-            android:layout_height="50dp"
-            app:cardCornerRadius="30dp"
-            android:layout_marginTop="30dp"
-            app:cardBackgroundColor="@color/mainColor"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/mainColor"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Logout"
+            android:textColor="@color/white"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_job_syafiq">
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Logout"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:layout_marginTop="8dp"
-                android:fontFamily="@font/sauce_semibold"
-                android:textAlignment="center"/>
-
-
-        </androidx.cardview.widget.CardView>
+            app:layout_constraintTop_toBottomOf="@id/text_job_syafiq"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
