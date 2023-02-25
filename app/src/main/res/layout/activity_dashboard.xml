@@ -8,8 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/header"
@@ -25,13 +24,11 @@
             android:id="@+id/btn_settings"
             android:layout_width="37dp"
             android:layout_height="37dp"
-            android:layout_marginEnd="335dp"
-            android:layout_marginBottom="83dp"
             android:src="@drawable/gear"
-            app:layout_constraintBottom_toBottomOf="@id/header"
-            app:layout_constraintEnd_toEndOf="@id/header"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/header" />
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <androidx.appcompat.widget.AppCompatTextView

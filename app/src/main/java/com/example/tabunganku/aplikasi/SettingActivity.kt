@@ -3,7 +3,10 @@ package com.example.tabunganku.aplikasi
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Switch
+import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatDelegate.*
 import com.example.tabunganku.LoginAndRegister.LoginActivity
 import com.example.tabunganku.databinding.ActivitySettingBinding
 import com.example.tabunganku.helper.Constant
@@ -33,6 +36,7 @@ class SettingActivity : AppCompatActivity() {
             Toast.makeText(applicationContext, "Berhasil Logout", Toast.LENGTH_SHORT).show()
             moveIntent()
         }
+
 
     }
 

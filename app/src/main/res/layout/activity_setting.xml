@@ -35,9 +35,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Setting"
+            android:textColor="@color/black"
             android:fontFamily="@font/inter_extrabold"
             android:textSize="40sp"
-            android:textColor="@color/black"
             android:textAlignment="textStart"
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
@@ -49,9 +49,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Options"
+            android:textColor="@color/black"
             android:fontFamily="@font/inter_bold"
             android:textSize="22sp"
-            android:textColor="@color/black"
             android:textAlignment="textStart"
             android:layout_marginStart="16dp"
             android:layout_marginTop="14dp"
@@ -63,14 +63,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="30dp"
             android:fontFamily="@font/inter_bold"
             android:text="Credit"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="22sp"
+            android:layout_marginTop="30dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/title_mode" />
+            app:layout_constraintTop_toBottomOf="@id/title_email"/>
 
         <View
             android:id="@+id/line_account"
@@ -121,20 +121,6 @@
             android:layout_marginStart="10dp"
             app:layout_constraintStart_toEndOf="@+id/title_email"
             app:layout_constraintTop_toBottomOf="@id/line_account" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/title_mode"
-            android:layout_width="70dp"
-            android:layout_height="wrap_content"
-            android:text="Mode :"
-            android:fontFamily="@font/inter_semibold"
-            android:textSize="18sp"
-            android:textAlignment="textStart"
-            android:textColor="@color/dark_grey"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txt_email"/>
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text_maul"
@@ -300,18 +286,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_job_syafiq"/>
 
-      <Switch
-          android:id="@+id/switch_mode"
-          android:layout_width="150dp"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="20dp"
-          android:layout_marginEnd="16dp"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/title_email"
-          android:textAlignment="textStart"
-          android:text="Light mode"
-          android:fontFamily="@font/inter_semibold"
-          android:textSize="18sp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
