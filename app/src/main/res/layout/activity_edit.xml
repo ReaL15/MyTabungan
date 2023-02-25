@@ -25,66 +25,94 @@
         android:fontFamily="@font/montserrat_bold"
         android:textSize="28sp"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="90dp"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/nama_tabungan"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/text_input_layout_nama_tabungan"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:ems="10"
-        android:background="@drawable/custom_input"
-        android:drawableStart="@drawable/ic_baseline_dehaze_24"
-        android:drawablePadding="12dp"
-        android:hint="@string/nama_tabungan"
-        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/maunabungapa"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/target_tabungan"
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/nama_tabungan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_bold"
+            android:drawableStart="@drawable/ic_baseline_dehaze_24"
+            android:drawablePadding="12dp"
+            android:hint="@string/nama_tabungan"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/text_input_layout_target_tabungan"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:ems="10"
-        android:background="@drawable/custom_input"
-        android:drawablePadding="12dp"
-        android:drawableStart="@drawable/ic_baseline_tabungan_24"
-        android:hint="@string/target_tabungan"
-        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nama_tabungan"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout_nama_tabungan"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/nominal_pengisian"
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/target_tabungan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_bold"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/ic_baseline_tabungan_24"
+            android:hint="@string/target_tabungan"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/text_input_layout_nominal_pengisian"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:ems="10"
-        android:background="@drawable/custom_input"
-        android:drawablePadding="12dp"
-        android:drawableStart="@drawable/ic_baseline_tabungan_24"
-        android:hint="@string/nominal_pengisian"
-        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title_rencana_pengisian"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/nominal_pengisian"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat_bold"
+            android:drawablePadding="12dp"
+            android:drawableStart="@drawable/ic_baseline_tabungan_24"
+            android:hint="@string/nominal_pengisian"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <TextView
         android:id="@+id/title_rencana_pengisian"
@@ -112,7 +140,7 @@
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/target_tabungan" />
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout_target_tabungan" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_card"
@@ -132,6 +160,7 @@
             android:background="@drawable/button_background"
             android:textColor="@color/white"
             android:text="Harian"
+            android:fontFamily="@font/inter_semibold"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -144,6 +173,7 @@
             android:background="@drawable/button_background"
             android:text="mingguan"
             android:textSize="15sp"
+            android:fontFamily="@font/inter_semibold"
             app:layout_constraintStart_toEndOf="@id/card_harian"
             app:layout_constraintEnd_toStartOf="@id/card_tahunan"
             app:layout_constraintTop_toTopOf="parent" />
@@ -156,11 +186,13 @@
             android:textColor="@color/white"
             android:text="tahunan"
             android:textSize="15sp"
+            android:fontFamily="@font/inter_semibold"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
     <androidx.cardview.widget.CardView
@@ -174,7 +206,7 @@
         app:cardCornerRadius="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nominal_pengisian">
+        app:layout_constraintTop_toBottomOf="@id/text_input_layout_nominal_pengisian">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"

@@ -12,20 +12,17 @@
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/ilustrasi_register"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         android:src="@drawable/ilustrasi_register"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linear_layout_regist"/>
 
     <LinearLayout
-        android:id="@+id/layour_regist"
-        android:layout_width="match_parent"
-        android:layout_height="345dp"
-        android:layout_centerInParent="true"
-        app:cardCornerRadius="20dp"
+        android:id="@+id/linear_layout_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,20 +30,19 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="20dp">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="487dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="30dp">
+                android:padding="20dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="16dp"
                     android:backgroundTint="@color/black"
                     android:fontFamily="@font/montserrat_black"
                     android:text="REGISTER"
@@ -55,28 +51,46 @@
                     android:textSize="30sp"
                     android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/edt_email_register"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/costum_email_icon"
-                    android:drawablePadding="10dp"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:hint="Email"
-                    android:inputType="textEmailAddress"
-                    android:textSize="15sp" />
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/text_input_layout_register_email"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content">
 
-                <EditText
-                    android:id="@+id/edt_password_register"
-                    android:layout_width="match_parent"
+                    <EditText
+                        android:id="@+id/edt_email_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/costum_email_icon"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:hint="Email"
+                        android:autofillHints="emailAddress"
+                        android:inputType="textEmailAddress"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:id="@+id/text_input_layout_register_password"
+                    android:layout_width="290dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:drawableStart="@drawable/costum_lock_icon"
-                    android:drawablePadding="10dp"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:hint="Password"
-                    android:inputType="textPassword"
-                    android:textSize="15sp" />
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/edt_password_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/costum_lock_icon"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:hint="Password"
+                        android:autofillHints="password"
+                        android:inputType="textPassword"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
                     android:id="@+id/btn_register"
@@ -92,7 +106,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
-                    android:backgroundTint="@color/black"
                     android:text="Already Have Account?"
                     android:textAlignment="center"
                     android:fontFamily="@font/montserrat_regular"/>
@@ -101,14 +114,14 @@
                     android:id="@+id/tv_to_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/black"
-                    android:fontFamily="@font/montserrat_regular"
+                    android:fontFamily="@font/montserrat_bold"
                     android:text="Login"
                     android:textAlignment="center"
-                    android:textColor="@color/mainColor"
-                    android:textStyle="bold" />
+                    android:textColor="@color/mainColor" />
 
             </LinearLayout>
+
+
 
         </androidx.cardview.widget.CardView>
 
