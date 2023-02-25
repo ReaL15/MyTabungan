@@ -88,7 +88,7 @@
         app:layout_constraintStart_toEndOf="@id/title_estimasi"
         app:layout_constraintTop_toBottomOf="@id/text_target" />
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout_kurang_terkumpul"
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -99,14 +99,18 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/tombol_terkumpul"
-            android:layout_width="180dp"
+            android:layout_width="190dp"
             android:layout_height="72dp"
             android:backgroundTint="@color/grey_card"
             android:elevation="0dp"
             app:cardMaxElevation="0dp"
             app:cardPreventCornerOverlap="false"
             android:padding="20dp"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tombol_kurang"
+            app:layout_constraintBottom_toBottomOf="parent">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/title_terkumpul"
@@ -142,11 +146,15 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/tombol_kurang"
-            android:layout_width="180dp"
+            android:layout_width="190dp"
             android:layout_height="72dp"
             android:backgroundTint="@color/grey_card"
             android:padding="20dp"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tombol_terkumpul"
+            app:layout_constraintBottom_toBottomOf="parent">
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/title_kurang"
@@ -179,6 +187,6 @@
 
         </androidx.cardview.widget.CardView>
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

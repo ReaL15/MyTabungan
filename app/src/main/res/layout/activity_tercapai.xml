@@ -19,9 +19,9 @@
         android:id="@+id/back_button_tercapai"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:src="@drawable/back_button"
+        android:src="@drawable/back_button_large"
         android:layout_marginTop="22dp"
-        android:layout_marginStart="6dp"
+        android:layout_marginStart="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -31,11 +31,13 @@
         android:layout_height="wrap_content"
         android:text="Tercapai"
         android:textSize="36sp"
-        android:layout_marginStart="120dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
         android:textColor="@color/black"
         android:fontFamily="@font/inter_bold"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header_tercapai"/>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -43,9 +45,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="230dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 
 

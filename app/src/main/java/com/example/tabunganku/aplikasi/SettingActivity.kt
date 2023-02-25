@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.tabunganku.LoginAndRegister.LoginActivity
-import com.example.tabunganku.LoginAndRegister.SharedPref
-import com.example.tabunganku.R
 import com.example.tabunganku.databinding.ActivitySettingBinding
 import com.example.tabunganku.helper.Constant
 import com.example.tabunganku.helper.PreferenceHelper
@@ -42,5 +40,6 @@ class SettingActivity : AppCompatActivity() {
         startActivity(Intent(this, LoginActivity::class.java))
         finish()
     }
+
 
 }
